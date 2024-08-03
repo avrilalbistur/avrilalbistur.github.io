@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- FONTAWESOME -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Oswald:wght@200..700&family=Playwrite+BE+VLG:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4181215d27.js" crossorigin="anonymous"></script>
     <title>Portafolio web</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <ul class="nav-list">
                 <li><a href="#about_me">Sobre mi</a></li>
                 <li><a href="#recent_work">Trabajos recientes</a></li>
                 <li><a href="#education">Educación</a></li>
@@ -17,55 +23,59 @@
             </ul>
         </nav>
     </header>
-    <section id="about_me">
+    <main>
+        <h1 class="header-text">Front-end Developer</h1>
+    </main>
+    <section class="about_me" id="about_me">
         <h1>Hola!!</h1>
         <p>Mi nombre es Avril Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio molestias fuga animi voluptate neque, delectus consequatur, commodi sit nam doloremque aspernatur? Distinctio consequatur perspiciatis, officiis tempore odio vitae et nisi.</p>
     </section>
-    <section id="recent_work">
+    <section class="recent_work" id="recent_work">
         <h2>Trabajos recientes</h2>
-        <div class="work">
-            <div>
-                <a href="avril2207.github.io/e-commerce-practica/"><img src="img/baristas.png" alt=""></a>
-                <div>
-                    <h5>E-commerce baristas</h5>
-                    <p>Réplica de trabajo realizado en el tutorial de <a href="https://www.youtube.com/watch?v=L3tal8ATx5o">Programación para el mundo</a> con funcionalidades propias realizadas en JavaScript.</p>
+        <div class="work_container">
+            <figure class="work">
+                <img class="img_work" src="img/baristas.png" alt="">
+                <div class="work_info">
+                    <a class="link" href="https://avril2207.github.io/E-commerce-practica/"><h3>E-commerce de baristas</h3></a>
+                    <p>Réplica de trabajo realizado en el tutorial de <a class="link" href="https://www.youtube.com/watch?v=L3tal8ATx5o">Programación para el mundo</a> con funcionalidades propias realizadas en JavaScript.</p>
                 </div>
-            </div>
-            <div>
-                <a href="https://avril2207.github.io/pagina-de-tortas/"><img src="img/dulcesDelicias.png" alt=""></a>
-                <div>
-                    <h5>E-commerce de pastelería</h5>
+            </figure>
+            <figure class="work">
+                <img class="img_work" src="img/dulcesDelicias.png" alt="">
+                <div class="work_info" >
+                    <a class="link" href="https://avril2207.github.io/pagina-de-tortas/"><h3>E-commerce de pastelería</h3></a>
                     <p>Trabajo propio realizado como proyecto final para el curso de Desarrollo web de CoderHouse.</p>
                 </div>
-            </div>
+            </figure>
         </div>
     </section>
-    <section id="education">
+    <section class="education" id="education">
         <h2>Educación</h2>
-        <div>
+        <div class="education_container">
+            <div class="courses">
+                    <ul>
+                        <li><strong>Desarrollo web: </strong>CoderHouse, Diciembre 2022-Febrero 2023. </li>
+                        <li><strong>JavaScript: </strong>CoderHouse, Diciembre 2023-Febrero 2024. </li>
+                        <li><strong>Desarrollo web: </strong>Jovenes a programar(JaP), Marzo 2024-En curso. </li>
+                    </ul>
+            </div>
             <div>
-                <ul>
-                    <li><strong>Desarrollo web:</strong>CoderHouse, Diciembre 2022-Febrero 2023. </li>
-                    <li><strong>JavaScript:</strong>CoderHouse, Diciembre 2023-Febrero 2024. </li>
-                    <li><strong>Desarrollo web:</strong>Jovenes a programar(JaP), Marzo 2024-En curso. </li>
-                </ul>
+                <div>
+                    <img class="certificate"  src="img/Desarrollo web.png" alt="certificado de finalización curso de desarrollo web">
+                </div>
+                <div>
+                    <img class="certificate"  src="img/Javascript.png" alt="certificado de finalización de curso de JavaScript">
+                </div>
             </div>
         </div>
-        <div>
-            <div>
-                <img src="img/Desarrollo web.png" alt="certificado de finalización curso de desarrollo web">
-            </div>
-            <div>
-                <img src="img/Javascript.png" alt="certificado de finalización de curso de JavaScript">
-            </div>
-        </div>
+        
     </section>
-    <footer id="contact">
+    <footer class="contact_section" id="contact">
         <h2>Contacto</h2>
-        <div>
-            <p>Gmail</p>
-            <p>Github</p>
-            <p>instagram</p>
+        <div class="social_media">
+            <a href="#"><i class="fa-solid fa-at"></i></a>
+            <a href="https://github.com/Avril2207"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
 </body>
