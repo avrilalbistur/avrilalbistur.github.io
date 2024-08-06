@@ -41,7 +41,7 @@ header{
 }
 /* MAIN SECTION */
 main{
-    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(../img/imagenHeader.jpg) no-repeat center fixed ;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(img/imagenHeader.jpg) no-repeat center fixed ;
     background-size: cover;
     height: 39rem;
     display: flex;
