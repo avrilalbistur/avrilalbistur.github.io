@@ -41,7 +41,7 @@ header{
 }
 /* MAIN SECTION */
 main{
-    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(/img/imagen\ header.jpg) no-repeat center fixed ;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(../img/imagen\ header.jpg) no-repeat center fixed ;
     background-size: cover;
     height: 39rem;
     display: flex;
@@ -54,7 +54,7 @@ main h1{
 }
 /* ABOUT ME SECTION */
 .about_me{
-    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(/img/imagen_AboutMe.jpg);
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(../img/imagen_AboutMe.jpg);
     background-size: cover;
     background-color: #2e2e2e;
     opacity: .9;
@@ -80,7 +80,7 @@ main h1{
 
 /* RECENT WORK SECTION */
 .recent_work{
-    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(/img/imagen_trabajos_recientes.jpeg) no-repeat center;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(../img/imagen_trabajos_recientes.jpeg) no-repeat center;
     background-size: cover;
     height: 39rem;
     color: #fff;
