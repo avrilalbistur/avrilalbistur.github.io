@@ -1,204 +1,113 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* HEADER AND NAVBAR */
-header{
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    color: white;
-}
-.navbar{
-    background-color: rgb(0, 0, 0, 70%);
-    height: 70px;
-    display: flex;
-    justify-content: end;
-}
-.nav-list{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-.nav-list li{
-    float: left;
-    font-family: Arial, Helvetica, sans-serif;;
-    font-size: 15px;
-}
-.nav-list li a{
-    display: block; 
-    padding: 20px;
-    color: #fff;
-    text-decoration: none;
-}
-.nav-list li a:hover{
-    border-bottom: 2.5px #fff solid;
-    padding: 5px 20px;
-    transition: 0.2s;
-}
-/* MAIN SECTION */
-main{
-    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(../img/imagenHeader.jpg) no-repeat center fixed ;
-    background-size: cover;
-    height: 39rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-main h1{
-    color: #fff;
-    font-size: 7rem;
-}
-/* ABOUT ME SECTION */
-.about_me{
-    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(../img/imagen_AboutMe.jpg);
-    background-size: cover;
-    background-color: #2e2e2e;
-    opacity: .9;
-    height: 39rem;
-    padding: 70px;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    color: #fff;
-    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.4);
-}
-
-.about_me h1{
-    font-family:"Antonio", sans-serif;
-    font-size: 4.5rem;
-    color: #c501e2;
-}
-.about_me p{
-    text-align: center;
-    margin: 60px 5px;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E7E6E6;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
     font-size: 2rem;
-}
-
-/* RECENT WORK SECTION */
-.recent_work{
-    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(../img/imagen_trabajos_recientes.jpeg) no-repeat center;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #D583AF;
+  }
+  
+  /* Header */
+  header {
+    background: url('/avrilalbistur.github.io/img/c98ed8741e189a0c8dab1d9ca7103771.jpg') no-repeat center center;
     background-size: cover;
-    height: 39rem;
-    color: #fff;
-}
-
-.recent_work h2{
-    font-family:"Antonio", sans-serif;
-    font-size: 4rem;
-    text-align: center;
-    padding: 30px;
-}
-.work_container{
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-}
-.work{
-    position: relative;
-    height:20rem;
-    width: 35rem;
-}
-.img_work {
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-    box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.5);
-    transition: all 500ms ease-out;
-}
-.work_info{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.80);
-    opacity: 0;
-    transition: all 0.5s ease-out;
-    visibility: hidden;
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    border-radius: 5%;
-    padding: 20px;
-}
-
-.work_info h3{
-    font-family:"Antonio", sans-serif;
-    font-size: 3rem;
-}
-.work_info p{
-    font-size: 1.5rem;
-}
-
-.link{
-    color: #fff;
-}
-
-.work:hover > .work_info{
-    opacity: 1;
-    visibility: visible;
-}
-
-/* EDUCATION SECTION */
-.education{
-    text-align: center;
+    color: white;
+    height: 624px;
+  }
+  
+  header h1 {
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 2rem; /* Tamaño base */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .sub-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #938484;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .sub-title::after {
+    content: '';
+    display: block;
+    width: 200px; /*largo de la línea */
+    height: 3px; /* Grosor de la línea */
+    background-color: #938484;
+    margin: 0 auto; /* Centra la línea */
+    margin-top: 10px;
+  }
+  
+  .sobre-mi {
+    background-color: #f8f9fa;
+  }
+  .sobre-mi-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .trabajos-recientes img {
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  
+  .trabajos-recientes img:hover {
+    transform: scale(1.05);
+  }
+  
+  .educacion {
+    background-color: #f0f0f0;
     padding: 40px;
-    background-color: #2a2a2a;
-}
+  }
+  .list{
+    margin-bottom: 50px;
+  }
+  .strong-color{
+    color: #D583AF;
+  }
+  
+  .contacto p {
+    font-size: 1rem;
+  }
+  
+  .icon{
+    color: #D583AF;
+    font-size: x-large;
+    margin-right: 5px;
+  }
+  .contacto strong {
+    font-size: 1.4rem;
+  }
+  
+  @media (min-width: 768px) { /* Pantallas medianas (md) y superiores */
+    .custom-heading {
+      font-size: 3rem;
+    }
+    .sobre-mi-text{
+        font-size: 1rem;
+    }
+    .list{
+        font-size: 1.2rem;
+    }
+  }
 
-.education h2{
-    font-family:"Antonio", sans-serif;
-    font-size: 5.3rem;
-    color: #c501e2;
-    padding-bottom: 20px ;
-}
-
-.education_container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    color: white;
-}
-
-.courses{
-    font-size: 1.9rem;
-    width: 40rem;
-    padding: 55px;
-}
-.courses li{
-    list-style: none;
-    text-align: start;
-    margin-bottom: 15px;
-}
-
-.certificate{
-    height: 17rem;
-}
-
-/* CONTACT SECTION */
-.contact_section{
-    background-color: #522B5B;
-    color:#fff;
-    text-align: center;
-    padding: 10px;
-    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.7);
-}
-
-.contact_section h2{
-    font-family:"Antonio", sans-serif;
-    font-size: 2rem;
-    padding-bottom: 20px;
-}
-
-.social_media{
-    display: flex;
-    justify-content: space-around;
-}
-.social_media a{
-    color: #fff;
-    font-size: 2rem;
-}
+  @media (min-width: 992px) { /* Pantallas grandes (lg) y superiores */
+    .custom-heading {
+      font-size: 4rem;
+    }
+    .sobre-mi-text{
+        font-size: 1.5rem;
+    }
+    .list{
+        font-size: 1.5rem;
+    }
+  }
