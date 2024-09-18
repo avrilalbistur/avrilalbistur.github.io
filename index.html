@@ -1,82 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- FONTAWESOME -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Oswald:wght@200..700&family=Playwrite+BE+VLG:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4181215d27.js" crossorigin="anonymous"></script>
-    <title>Portafolio web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Avril</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li><a href="#about_me">Sobre mi</a></li>
-                <li><a href="#recent_work">Trabajos recientes</a></li>
-                <li><a href="#education">Educación</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1 class="header-text">Front-end Developer</h1>
-    </main>
-    <section class="about_me" id="about_me">
-        <h1>Hola!!</h1>
-        <p>Mi nombre es Avril Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio molestias fuga animi voluptate neque, delectus consequatur, commodi sit nam doloremque aspernatur? Distinctio consequatur perspiciatis, officiis tempore odio vitae et nisi.</p>
-    </section>
-    <section class="recent_work" id="recent_work">
-        <h2>Trabajos recientes</h2>
-        <div class="work_container">
-            <figure class="work">
-                <img class="img_work" src="img/baristas.png" alt="">
-                <div class="work_info">
-                    <a class="link" href="https://avrilalbistur.github.io/E-commerce-practica/"><h3>E-commerce de baristas</h3></a>
-                    <p>Réplica de trabajo realizado en el tutorial de <a class="link" href="https://www.youtube.com/watch?v=L3tal8ATx5o">Programación para el mundo</a> con funcionalidades propias realizadas en JavaScript.</p>
-                </div>
-            </figure>
-            <figure class="work">
-                <img class="img_work" src="img/dulcesDelicias.png" alt="">
-                <div class="work_info" >
-                    <a class="link" href="https://avrilalbistur.github.io/pagina-de-tortas/"><h3>E-commerce de pastelería</h3></a>
-                    <p>Trabajo propio realizado como proyecto final para el curso de Desarrollo web de CoderHouse.</p>
-                </div>
-            </figure>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#trabajos-recientes">Trabajos recientes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="d-flex justify-content-center align-items-center text-center py-5">
+    <div class="container">
+      <h1 class="custom-heading">Hola!! Mi nombre es Avril y este es mi <span class="highlight">portafolio</span></h1>
+    </div>
+  </header>
+
+  <!-- Sobre mí -->
+  <section class="sobre-mi py-5" id="sobre-mi">
+    <div class="container text-center">
+      <h2 class="sub-title">Sobre mí</h2>
+      <p class="sobre-mi-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio molestias fuga animi voluptate neque, delectus consequatur, commodi sit nam doloremque aspernatur? Distinctio consequatur perspiciatis, officiis tempore odio vitae et nisi
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio molestias fuga.</p>
+    </div>
+  </section>
+
+  <!-- Trabajos recientes -->
+  <section class="trabajos-recientes py-5" id="trabajos-recientes">
+    <div class="container">
+      <h2 class="text-center sub-title">Trabajos recientes</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <img src="img/baristas.png" alt="Trabajo reciente 1" class="img-fluid">
         </div>
-    </section>
-    <section class="education" id="education">
-        <h2>Educación</h2>
-        <div class="education_container">
-            <div class="courses">
-                    <ul>
-                        <li><strong>Desarrollo web: </strong>CoderHouse, Diciembre 2022-Febrero 2023. </li>
-                        <li><strong>JavaScript: </strong>CoderHouse, Diciembre 2023-Febrero 2024. </li>
-                        <li><strong>Desarrollo web: </strong>Jovenes a programar(JaP), Marzo 2024-En curso. </li>
-                    </ul>
-            </div>
-            <div>
-                <div>
-                    <img class="certificate"  src="img/Desarrollo web.png" alt="certificado de finalización curso de desarrollo web">
-                </div>
-                <div>
-                    <img class="certificate"  src="img/Javascript.png" alt="certificado de finalización de curso de JavaScript">
-                </div>
-            </div>
+        <div class="col-md-6 mb-4">
+          <img src="img/dulcesDelicias.png" alt="Trabajo reciente 2" class="img-fluid">
         </div>
-        
-    </section>
-    <footer class="contact_section" id="contact">
-        <h2>Contacto</h2>
-        <div class="social_media">
-            <a href="#"><i class="fa-solid fa-at"></i></a>
-            <a href="https://github.com/Avril2207"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Educación -->
+  <section class="educacion py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="sub-title">Educación</h2>
+      <ul class="list-unstyled list">
+        <li><strong class="strong-color">Desarrollo web</strong>: CodeHouse, Diciembre 2022 - Febrero 2023.</li>
+        <li><strong class="strong-color">JavaScript</strong>: CodeHouse, Diciembre 2023 - Febrero 2024.</li>
+        <li><strong class="strong-color">Desarrollo web</strong>: Jóvenes a programar (JAP), Marzo 2024 - en curso.</li>
+      </ul>
+      <!-- Diplomas -->
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <img src="img/Desarrollo web.png" alt="Diploma Desarrollo Web" class="img-fluid border rounded">
         </div>
-    </footer>
+        <div class="col-md-6 mb-4">
+          <img src="img/Javascript.png" alt="Diploma JavaScript" class="img-fluid border rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="contacto py-5" id="contacto">
+    <div class="container text-center">
+      <h2 class="sub-title">Contacto</h2>
+      <div class="row">
+        <div class="col-md-4 col-sm-3">
+          <p><i class="fas fa-envelope icon"></i><strong class="strong-color">Gmail</strong></p>
+          <p>aalbistur27@gmail.com</p>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <p><i class="fab fa-github icon"></i><a class="text-decoration-none" href="https://github.com/avrilalbistur"><strong class="strong-color">Github</strong></a></p>
+          <p>avrilalbistur</p>
+        </div>
+        <div class="col-md-4 col-sm-3">
+          <p><i class="fab fa-instagram icon"></i><strong class="strong-color">Redes sociales</strong></p>
+          <p>avrilalbistur</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
